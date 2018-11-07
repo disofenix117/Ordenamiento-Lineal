@@ -98,19 +98,19 @@ void Secuencial::eliminarultimo()
 {
 	Minodo *P = lista;
 	Minodo *Q = P;
-	while (P->enlace != NULL)
+	while (P->enlace1 != NULL)
 	{
 		Q = P;
-		P = P->enlace;
+		P = P->enlace1;
 	}
-	Q->enlace = NULL;
+	Q->enlace1 = NULL;
 	delete P;
 }
 void Secuencial::eliminarprimero()
 {
 	Minodo *Q = lista;
-	lista = Q->enlace;
-	Q->enlace = NULL;
+	lista = Q->enlace1;
+	Q->enlace1 = NULL;
 	delete Q;
 }
 

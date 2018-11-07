@@ -75,7 +75,7 @@ Secuencial objeto;
 							while (S != NULL)
 							{
 								cout << "   " << i << "\t\t   " << S->info << endl;
-								S = S->enlace;
+								S = S->enlace1;
 								i++;
 							}
 							subindex1 = 0;
